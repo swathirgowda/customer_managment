@@ -1,0 +1,121 @@
+<router-outlet></router-outlet>
+<!DOCTYPE html>
+<html>
+<title>Customer Manager</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="C:\Users\swago\Downloads\responsive-table-v1\Table_Responsive_v1\index.html"  class="w3-bar-item w3-button">CUSTOMERS LIST</a>
+  <a href="C:\Users\swago\Desktop\customer_manager\map.html"  class="w3-bar-item w3-button">MAP VIEW</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16"> <h1>CUSTOMERS</h1></div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter" id="p1">
+      <img src="https://www.vippng.com/png/detail/15-152165_graduation-png-student-icon.png" alt="Sandwich" style="width:70%">
+      <h3>Ted James</h3>
+      <p style="font-size:large;">Phoenix, <br/> Arziona</p>
+      <a href="order.html" class="w3-bar-item w3-button w3-hover-black" >View Orders</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.vippng.com/png/detail/15-152165_graduation-png-student-icon.png" alt="Steak" style="width:70%">
+      <h3>Michelle Thompson</h3>
+      <p style="font-size:large;">Encinitas,, <br/> California</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">View Orders</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.seekclipart.com/thumbs/7/76655.jpg" alt="Cherries" style="width:70%">
+      <h3>Zenny Bishop</h3>
+      <p style="font-size:large;">Seattle, <br/> Washington</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">View Orders</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.vippng.com/png/detail/15-152165_graduation-png-student-icon.png" alt="Pasta and Wine" style="width:70%">
+      <h3>Igor Minar</h3>
+      <p style="font-size:large;">Dallas,, <br/> Texas</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">View Orders</a>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://www.seekclipart.com/thumbs/7/76655.jpg" alt="Popsicle" style="width:70%">
+      <h3>Bradi Green</h3>
+      <p style="font-size:large;">Oriando, <br/> Florida</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">View Orders</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.vippng.com/png/detail/15-152165_graduation-png-student-icon.png" alt="Salmon" style="width:70%">
+      <h3>Misko Hevery</h3>
+      <p style="font-size:large;">Carey,, <br/> North Carolina</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">View Orders</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.seekclipart.com/thumbs/7/76655.jpg" alt="Sandwich" style="width:70%">
+      <h3>Heedy Wahlin</h3>
+      <p style="font-size:large;">Anaheim, <br/> California</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">View Orders</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.vippng.com/png/detail/15-152165_graduation-png-student-icon.png" alt="Croissant" style="width:70%">
+      <h3>John Papa</h3>
+      <p style="font-size:large;">Oriando, <br/> Florida</p>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">View Orders</a>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
